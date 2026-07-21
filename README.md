@@ -1,6 +1,5 @@
-# Module name: Materials
+# Codebase Exploration with AI: Materials
 
-> __TODO:__ Create a new repo from this template, create the requisite versions/x.x branch, add the relevant team with Write access, and update references in this readme as appropriate.
 
 
 This repo contains all the downloadable materials and projects associated with the [MODULE](https://www.kodeco.com) from [Kodeco](https://www.kodeco.com).
@@ -13,4 +12,4 @@ Each version has its own branch, named `versions/[VERSION]`. The default branch 
 
 | Branch                                                                                  | Version | Release Date |
 | --------------------------------------------------------------------------------------- |:-------:|:------------:|
-| [versions/1.0](https://github.com/kodecocodes/m3-TODO-materials/tree/versions/1.0) | 1.0     | YYYY-MM-DD   |
+| [versions/1.0](https://github.com/kodecocodes/m3-cbe-materials/tree/versions/1.0) | 1.0     | YYYY-MM-DD   |
