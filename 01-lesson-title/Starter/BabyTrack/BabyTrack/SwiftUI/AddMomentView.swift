@@ -1,0 +1,73 @@
+/// Sample code from the book, Expert Swift,
+/// published at kodeco.com, Copyright (c) 2025 Kodeco Inc.
+/// See LICENSE for details. Thank you for supporting our work!
+/// Visit https://www.kodeco.com/books/expert-swift
+
+import SwiftUI
+import PhotosUI
+import BabyKit
+
+struct AddMomentView: UIViewControllerRepresentable {
+  let feed: Feed
+  @Binding var isPresented: Bool
+
+  func makeUIViewController(context: Context) -> PHPickerViewController {
+    var configuration = PHPickerConfiguration()
+    configuration.selectionLimit = 1
+    configuration.filter = .images
+
+    let controller = PHPickerViewController(configuration: configuration)
+    controller.delegate = context.coordinator
+    return controller
+  }
+
+  func updateUIViewController(_ uiViewController: PHPickerViewController,
+                              context: Context) {
+  }
+
+  func makeCoordinator() -> Coordinator {
+    Coordinator(self)
+  }
+
+  class Coordinator: PHPickerViewControllerDelegate {
+    private let parent: AddMomentView
+
+    init(_ parent: AddMomentView) {
+      self.parent = parent
+    }
+
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+      guard let result = results.first,
+            result.itemProvider.canLoadObject(ofClass: UIImage.self) else {
+        return
+      }
+
+      result.itemProvider
+        .loadObject(ofClass: UIImage.self) { [weak self] obj, err in
+          guard let self else { return }
+
+          let image = obj as? UIImage
+          let hadError = (err != nil)
+          let parent = self.parent
+
+          Task { @MainActor in
+            defer { parent.isPresented = false }
+
+            guard let image else { return }
+
+            if hadError {
+              print("Error in picked image: \(err!)")
+              return
+            }
+
+            guard let attachmentId = parent.feed.storeImage(image) else {
+              print("Failed storing, no UUID")
+              return
+            }
+
+            parent.feed.addMoment(with: attachmentId)
+          }
+        }
+    }
+  }
+}
