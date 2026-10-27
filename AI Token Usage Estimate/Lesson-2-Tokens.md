@@ -16,8 +16,8 @@ This request to create the Lesson 2 report is excluded so it can be counted in a
 |---|---:|
 | Your prompts (input) | 148 |
 | Responses visible in the conversation (output) | 3,756 |
-| **Total tokens**         | **3,904** |
-| **Total estimated cost** | **~$0.05** |
+| **Total estimated tokens** |  **3,904** |
+| **Total estimated cost**   | **~$0.05** |
 
 ## Estimated interaction totals
 
@@ -27,7 +27,7 @@ This request to create the Lesson 2 report is excluded so it can be counted in a
 | Phased modernization plan | 45 | 1,510 | 1,555 |
 | Modernization-plan file request and saved-file response | 49 | 16 | 65 |
 | **Estimated total tokens** | **148** | **3,756** | **3,904** |
-| **Estimated total cost**   |         |           |  **0.05** |
+| **Estimated total cost**   |         |           |  **~0.05** |
 
 ## Precision and exclusions
 
