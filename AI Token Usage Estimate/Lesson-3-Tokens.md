@@ -36,3 +36,5 @@ These are best-effort estimates for visible user prompts and visible final respo
 No model-specific tokenizer or billing telemetry was available in this session. The long Markdown responses contain tables, source links, paths, and punctuation that may tokenize differently across models, so these figures are estimates rather than exact billed usage.
 
 The request that generated the saved **feature-readiness-plan.md** file is counted using its visible final Markdown response. The patch/tool payload used to write the local file is excluded.
+
+The estimated costs are for GPT-5.6 Terra model. Costs varies depending on the model used. The estimated costs use pay-as-you-go API prices in USD as of October 2026. If you use a ChatGPT subscription plan, your usage counts against the plan's allowance instead. Therefore, these values are calibrated estimates, not exact billed usage. 

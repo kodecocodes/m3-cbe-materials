@@ -8,7 +8,7 @@ This report reconstructs the three visible Lesson 1 interactions from the record
 2. Source-backed recheck and prioritization of the findings
 3. Creation of the final **codebase-assessment.md**
 
-The original Xcode token telemetry is no longer available. The estimated cost prices are for GPT-5.6 Terra model, in USD as of October 2026. These values are calibrated estimates, not exact billed usage. 
+The original Xcode token telemetry is no longer available. The estimated costs are for GPT-5.6 Terra model. Costs varies depending on the model used. The estimated costs use pay-as-you-go API prices in USD as of October 2026. If you use a ChatGPT subscription plan, your usage counts against the plan's allowance instead. Therefore, these values are calibrated estimates, not exact billed usage. 
 
 ## Estimated total
 
