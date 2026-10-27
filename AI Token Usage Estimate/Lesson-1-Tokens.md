@@ -2,13 +2,13 @@
 
 ## Scope
 
-This report reconstructs the three visible Lesson 1 interactions from the recorded prompts and the completed `codebase-assessment.md`:
+This report reconstructs the three visible Lesson 1 interactions from the recorded prompts and the completed **codebase-assessment.md**:
 
 1. BabyTrack codebase exploration and potential technical-debt analysis
 2. Source-backed recheck and prioritization of the findings
-3. Creation of the final `codebase-assessment.md`
+3. Creation of the final **codebase-assessment.md**
 
-The original Xcode token telemetry is no longer available. These values are therefore calibrated estimates, not exact billed usage.
+The original Xcode token telemetry is no longer available. These values are therefore calibrated estimates, not exact billed usage. The estimated cost prices are for GPT-5.6 Terra model, in USD as of October 2026.
 
 ## Estimated total
 
@@ -16,7 +16,8 @@ The original Xcode token telemetry is no longer available. These values are ther
 |---|---:|
 | Your prompts (input) | 148 |
 | Responses visible in the conversation (output) | 5,531 |
-| **Total** | **5,679** |
+| **Total tokens** | **5,679** |
+| **Estimated cost** | **~$0.07** |
 
 ## Estimated interaction totals
 
@@ -25,14 +26,15 @@ The original Xcode token telemetry is no longer available. These values are ther
 | Codebase map and potential technical-debt analysis | 40 | 2,230 | 2,270 |
 | Source recheck and prioritization | 45 | 1,020 | 1,065 |
 | Final `codebase-assessment.md` generation | 63 | 2,281 | 2,344 |
-| **Estimated total** | **148** | **5,531** | **5,679** |
+| **Estimated total tokens** | **148** | **5,531** | **5,679** |
+| **Estimated total cost** |                        **~$0.07** |
 
 ## Estimation method
 
 - The input estimate uses the actual three Lesson 1 prompts and the observed prompt-token ratios from the verified Lesson 2 and Lesson 3 reports.
 - The first response is calibrated against Lesson 2's comparable code-boundary analysis response.
 - The second response is calibrated against Lesson 3's comparable plan-review response.
-- The final response is calculated from the actual size of `codebase-assessment.md`, using the known response-to-document ratio from Lesson 3's final Markdown generation.
+- The final response is calculated from the actual size of **codebase-assessment.md**, using the known response-to-document ratio from Lesson 3's final Markdown generation.
 
 ## Precision and exclusions
 
