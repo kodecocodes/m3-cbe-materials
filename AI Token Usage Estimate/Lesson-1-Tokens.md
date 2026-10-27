@@ -8,7 +8,7 @@ This report reconstructs the three visible Lesson 1 interactions from the record
 2. Source-backed recheck and prioritization of the findings
 3. Creation of the final **codebase-assessment.md**
 
-The original Xcode token telemetry is no longer available. These values are therefore calibrated estimates, not exact billed usage. The estimated cost prices are for GPT-5.6 Terra model, in USD as of October 2026.
+The original Xcode token telemetry is no longer available. The estimated cost prices are for GPT-5.6 Terra model, in USD as of October 2026. These values are calibrated estimates, not exact billed usage. 
 
 ## Estimated total
 
@@ -16,7 +16,7 @@ The original Xcode token telemetry is no longer available. These values are ther
 |---|---:|
 | Your prompts (input) | 148 |
 | Responses visible in the conversation (output) | 5,531 |
-| **Total tokens** | **5,679** |
+| **Total tokens**   |  **5,679** |
 | **Estimated cost** | **~$0.07** |
 
 ## Estimated interaction totals
@@ -26,8 +26,8 @@ The original Xcode token telemetry is no longer available. These values are ther
 | Codebase map and potential technical-debt analysis | 40 | 2,230 | 2,270 |
 | Source recheck and prioritization | 45 | 1,020 | 1,065 |
 | Final `codebase-assessment.md` generation | 63 | 2,281 | 2,344 |
-| **Estimated total tokens** | **148** | **5,531** | **5,679** |
-| **Estimated total cost** |                        **~$0.07** |
+| **Estimated total tokens** | **148** | **5,531** |  **5,679** |
+| **Estimated total cost** |           |           | **~$0.07** |
 
 ## Estimation method
 
